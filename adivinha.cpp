@@ -8,7 +8,7 @@ int main(){
     cout<<"----------------------------"<<endl;
 
     const int NUMERO_SECRETO = 42;
-    cout<<"secret number: "<< NUMERO_SECRETO<<" shhhhh!"<<endl;
+    //cout<<"secret number: "<< NUMERO_SECRETO<<" shhhhh!"<<endl;
 
     bool notSet = true;
     int attempts = 0;
