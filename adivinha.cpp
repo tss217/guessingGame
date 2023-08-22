@@ -12,6 +12,7 @@ int main(){
 
     bool notSet = true;
     int attempts = 0;
+    double points = 1000.0;
 
     while (notSet){
         attempts++;
@@ -20,6 +21,9 @@ int main(){
         int guess;
         cout<<"what is your guess?"<<endl;
         cin>>guess;
+
+        double pointsLost = abs(guess - NUMERO_SECRETO) /2;
+        points = points - pointsLost;
 
         cout<<"your guessing is : "<< guess<<endl;
 
@@ -42,5 +46,7 @@ int main(){
     
     cout<<"END GAME"<<endl;
     cout<<"attemps:"<< attempts<<endl;
-
+    cout.precision(2);
+    cout<< fixed;
+    cout<<"poits: "<<  points<<endl;
 }
